@@ -30,6 +30,10 @@ class Octave < Formula
   depends_on :fortran
   depends_on "pcre"
 
+  # for audio support
+  depends_on "portaudio"
+  depends_on "libsndfile"
+
   # options, enabled by default
   option "without-check",          "Do not perform build-time tests (not recommended)"
   option "without-curl",           "Do not use cURL (urlread/urlwrite/@ftp)"
